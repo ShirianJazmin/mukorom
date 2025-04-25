@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MukoromWebshop</string>
+    <string name="email">Email</string>
+    <string name="bejelentkez_s">Bejelentkezés</string>
+    <string name="jelsz">Jelszó</string>
+    <string name="regisztr_ci">Regisztráció</string>
+    <string name="regisztr_cii">Regisztráció</string>
+    <string name="email_">Email</string>
+    <string name="jelszo">Jelszó</string>
+    <string name="regisztr_cil">Regisztráció</string>
+    <string name="dv_z_llek_a_m_k_r_m_webshopban">Üdvözöllek a Műköröm Webshopban!</string>
+    <string name="k_r_m_1">Köröm 1</string>
+    <string name="k_r_m_2">Köröm 2</string>
+    <string name="k_r_m_3">Köröm 3</string>
+    <string name="bejelentkez_ss">Bejelentkezés</string>
+</resources>
