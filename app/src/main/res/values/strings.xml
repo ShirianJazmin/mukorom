@@ -13,4 +13,8 @@
     <string name="k_r_m_2">Köröm 2</string>
     <string name="k_r_m_3">Köröm 3</string>
     <string name="bejelentkez_ss">Bejelentkezés</string>
+    <string name="jelszoq">Jelszó</string>
+    <string name="bejelentkez_sa">Bejelentkezés</string>
+    <string name="regisztr_cia">Regisztráció</string>
+    <string name="email_a">Email</string>
 </resources>

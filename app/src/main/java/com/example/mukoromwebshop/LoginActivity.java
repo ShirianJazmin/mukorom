@@ -2,57 +2,47 @@ package com.example.mukoromwebshop;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import com.example.mukoromwebshop.R;
+import com.example.mukoromwebshop.FirebaseService;
 
 public class LoginActivity extends AppCompatActivity {
-
-    private EditText emailEditText, passwordEditText;
+    private EditText emailInput, passwordInput;
+    private Button loginBtn, registerBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login);
 
+        emailInput = findViewById(R.id.emailInput);
+        passwordInput = findViewById(R.id.passwordInput);
+        loginBtn = findViewById(R.id.loginBtn);
+        registerBtn = findViewById(R.id.registerBtn);
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        loginBtn.setOnClickListener(v -> login());
+        registerBtn.setOnClickListener(v -> register());
+    }
 
-        emailEditText = findViewById(R.id.emailEditText);
-        passwordEditText = findViewById(R.id.passwordEditText);
-        Button loginButton = findViewById(R.id.loginButton);
-        Button goToRegisterButton = findViewById(R.id.goToRegisterButton);
+    private void login() {
+        String email = emailInput.getText().toString();
+        String password = passwordInput.getText().toString();
+        FirebaseService.auth.signInWithEmailAndPassword(email, password)
+                .addOnSuccessListener(authResult -> {
+                    startActivity(new Intent(this, com.example.mukoromwebshop.MainActivity.class));
+                    finish();
+                })
+                .addOnFailureListener(e -> Toast.makeText(this, "Sikertelen bejelentkezés", Toast.LENGTH_SHORT).show());
+    }
 
-        // Bejelentkezés gomb
-        loginButton.setOnClickListener(v -> {
-            String email = emailEditText.getText().toString().trim();
-            String password = passwordEditText.getText().toString().trim();
-
-            if (!email.isEmpty() && !password.isEmpty()) {
-                Toast.makeText(this, "Sikeres bejelentkezés!", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(LoginActivity.this, MainActivity.class));
-                finish();
-            } else {
-                Toast.makeText(this, "Kérjük, töltse ki az emailt és a jelszót!", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-
-        goToRegisterButton.setOnClickListener(v -> {
-            Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
-            startActivity(intent);
-        });
+    private void register() {
+        String email = emailInput.getText().toString();
+        String password = passwordInput.getText().toString();
+        FirebaseService.auth.createUserWithEmailAndPassword(email, password)
+                .addOnSuccessListener(authResult -> Toast.makeText(this, "Sikeres regisztráció", Toast.LENGTH_SHORT).show())
+                .addOnFailureListener(e -> Toast.makeText(this, "Sikertelen regisztráció", Toast.LENGTH_SHORT).show());
     }
 }
