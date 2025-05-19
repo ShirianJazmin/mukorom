@@ -12,9 +12,12 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mukoromwebshop.R;
+import com.example.mukoromwebshop.activities.MainActivity;
 import com.example.mukoromwebshop.models.Product;
 import com.example.mukoromwebshop.utils.CartManager;
+import com.google.android.gms.analytics.ecommerce.Product;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductViewHolder> {
@@ -28,6 +31,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         this.productList = productList;
         this.cartManager = cartManager;
     }
+
 
     @NonNull
     @Override

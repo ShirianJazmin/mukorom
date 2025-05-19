@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="recyclerView" type="id">a</item>
+    <item name="cartBtn" type="id">b</item>
+    <item name="cartContent" type="id">c</item>
+    <item name="productTitle" type="id">d</item>
+    <item name="productDescription" type="id">v</item>
+    <item name="product_name" type="id">y</item>
+    <item name="product_description" type="id">x</item>
+    <item name="product_price" type="id">n</item>
+    <item name="product_image" type="id">m</item>
+    <item name="button_add" type="id">l</item>
+</resources>

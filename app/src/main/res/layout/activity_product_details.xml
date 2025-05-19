@@ -13,12 +13,13 @@
             android:id="@+id/detailImage"
             android:layout_width="match_parent"
             android:layout_height="250dp"
+            android:contentDescription="@string/todon"
             android:scaleType="centerCrop"
-            android:src="@drawable/sample_nail" />
+            android:src="@drawable/nail1" />
 
         <TextView
             android:id="@+id/detailName"
-            android:text="Termék neve"
+            android:text="@string/ragaszthat_m_k_r_m"
             android:textSize="22sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp"
@@ -35,14 +36,14 @@
 
         <TextView
             android:id="@+id/detailDescription"
-            android:text="Ez egy példa termékleírás a műköröm termékhez."
+            android:text="@string/ez_egy_p_lda_term_kle_r_s_a_m_k_r_m_term_khez"
             android:layout_marginTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/addToCartBtn"
-            android:text="Kosárba teszem"
+            android:text="@string/kos_rba_teszem"
             android:layout_marginTop="24dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

@@ -21,4 +21,26 @@
     <string name="jelsz1">Jelszó</string>
     <string name="regisztr_ci2">Regisztráció</string>
     <string name="bejelentkez_s3">Bejelentkezés</string>
+    <string name="megrendel_s_lead_sal">Megrendelés leadása</string>
+    <string name="sszesen_2999_ftf">Összesen: 2999 Ft</string>
+    <string name="emailq">Email</string>
+    <string name="jelszl">Jelszó</string>
+    <string name="bejelentkez_ső">Bejelentkezés</string>
+    <string name="m_g_nincs_fi_kom">Még nincs fiókom</string>
+    <string name="elem_elt_vol_t_sa">Elem eltávolítása</string>
+    <string name="_2990_ft">2990 Ft</string>
+    <string name="term_k">Termék</string>
+    <string name="todom">TODO</string>
+    <string name="todol">TODO</string>
+    <string name="felragaszthat_m_k_r_m">Felragasztható műköröm</string>
+    <string name="r_2990_ft">Ár: 2990 Ft</string>
+    <string name="kos_rba">Kosárba</string>
+    <string name="emailé">Email</string>
+    <string name="jelszá">Jelszó</string>
+    <string name="regisztr_ciá">Regisztráció</string>
+    <string name="m_r_van_fi_kom">Már van fiókom</string>
+    <string name="todon">TODO</string>
+    <string name="ragaszthat_m_k_r_m">Ragasztható műköröm</string>
+    <string name="ez_egy_p_lda_term_kle_r_s_a_m_k_r_m_term_khez">Ez egy példa termékleírás a műköröm termékhez.</string>
+    <string name="kos_rba_teszem">Kosárba teszem</string>
 </resources>

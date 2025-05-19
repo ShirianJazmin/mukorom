@@ -16,8 +16,9 @@
             android:id="@+id/cartItemImage"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:contentDescription="@string/todom"
             android:scaleType="centerCrop"
-            android:src="@drawable/sample_nail" />
+            android:src="@drawable/nail1" />
 
         <LinearLayout
             android:orientation="vertical"
@@ -28,7 +29,7 @@
 
             <TextView
                 android:id="@+id/cartItemName"
-                android:text="Termék"
+                android:text="@string/term_k"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_width="wrap_content"
@@ -36,7 +37,7 @@
 
             <TextView
                 android:id="@+id/cartItemPrice"
-                android:text="2990 Ft"
+                android:text="@string/_2990_ft"
                 android:textSize="14sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -45,8 +46,9 @@
         <ImageButton
             android:id="@+id/removeItemBtn"
             android:src="@android:drawable/ic_delete"
+            android:contentDescription="@string/elem_elt_vol_t_sa"
             android:background="@null"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
