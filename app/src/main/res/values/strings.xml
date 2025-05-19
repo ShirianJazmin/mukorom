@@ -17,4 +17,8 @@
     <string name="bejelentkez_sa">Bejelentkezés</string>
     <string name="regisztr_cia">Regisztráció</string>
     <string name="email_a">Email</string>
+    <string name="email1">Email</string>
+    <string name="jelsz1">Jelszó</string>
+    <string name="regisztr_ci2">Regisztráció</string>
+    <string name="bejelentkez_s3">Bejelentkezés</string>
 </resources>
