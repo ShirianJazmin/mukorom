@@ -1,8 +1,12 @@
 package com.example.mukoromwebshop.utils;
 
+import android.content.Context;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 import java.util.List;
 import com.example.mukoromwebshop.models.Product;
+import com.google.android.gms.analytics.ecommerce.Product;
 
 public class CartManager {
     private List<Product> cart = new ArrayList<>();
@@ -10,6 +14,10 @@ public class CartManager {
 
     public CartManager(Context context) {
         this.context = context;
+    }
+
+    public static CartManager getInstance() {
+        return null;
     }
 
     public void addToCart(Product product) {

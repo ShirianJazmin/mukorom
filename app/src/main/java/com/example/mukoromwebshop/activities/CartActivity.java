@@ -1,5 +1,6 @@
 package com.example.mukoromwebshop.activities;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +13,7 @@ import java.util.List;
 public class CartActivity extends AppCompatActivity {
     TextView cartContent;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,10 +1,10 @@
 package com.example.mukoromwebshop.models;
 
 public class Product {
-    private String name;
-    private String description;
-    private double price;
-    private int imageResId;
+    private final String name;
+    private final String description;
+    private final double price;
+    private final int imageResId;
 
     public Product(String name, String description, double price, int imageResId) {
         this.name = name;
